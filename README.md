@@ -19,12 +19,13 @@ En el siguiente repositorio se hara una recopilación de todos los proyectos fin
 |||Jonatan Jair Leal González||
 |6|Creación de una API para analizar el rendimiento de aplicaciones|Jaime Andrés Muñoz|[GR-06](GR-06/)|
 |||Estefania Goez Moreno||
+|||Juan Sebastian Ortiz Tangarife||
 |7|Tiny ML para un mecanismo de detección de objetos|Oswald Daniel Gutierrez|[GR-07](GR-07/)|
 |||Santiago Rivera Montoya||
 |||Leider Felipe Caicedo||
-|8|FreeRTOS para Riego Automatizado en Microcontrolador|Oswald Daniel Gutierrez|[GR-08](GR-08/)|
-|||Santiago Rivera Montoya||
-|||Leider Felipe Caicedo||
+|8|FreeRTOS para Riego Automatizado en Microcontrolador|Sebastian Aristizabal Castañeda|[GR-08](GR-08/)|
+|||Luis Mateo Ochoa Agudelo||
+|||Alejandro Arias Ortiz||
 |9|Comparación de Algoritmos: Implementación Secuencial en Python vs. Paralelización en Spark|Efraín García Valencia|[GR-09](GR-09/)|
 |||Samuel Acevedo Bustamante||
 |||Nicolas Carmona Cardona||
@@ -42,5 +43,5 @@ En el siguiente repositorio se hara una recopilación de todos los proyectos fin
 |||Juan Manuel Vera Osorio||
 |14|Creación de una API para analizar el rendimiento de aplicaciones|Johan Sebastian Henao Cañas|[GR-14](GR-14/)|
 |||Alejandro Becerra Acevedo||
-|15|Monitoreo de gases basado en el microcontrolador ESP32 y el sistema operativo en tiempo real FreeRTOS|Juan Sebastian Ortiz Tangarife|[GR-15](GR-15/)|
+|~~15~~|~~Monitoreo de gases basado en el microcontrolador ESP32 y el sistema operativo en tiempo real FreeRTOS~~|~~Juan Sebastian Ortiz Tangarife~~|~~[GR-15](GR-15/)~~|
 
