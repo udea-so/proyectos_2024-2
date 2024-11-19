@@ -1,5 +1,6 @@
 # Curso de Sistemas Operativos (2024/2)
 
+En el siguiente repositorio se hara una recopilación de todos los proyectos finales del semestre 2024/2. En el documento [Proyecto final - Paso 4](Proyecto%20final%20-%20OS%20-%20Step%204.pdf) se describen los lineamientos de la entrega final.
 
 ## Recopilacion de proyectos finales
 
