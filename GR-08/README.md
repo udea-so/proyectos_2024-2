@@ -21,7 +21,7 @@ Este proyecto utiliza un ESP32 para automatizar el riego de plantas según los n
 
 ## Pasos para usar este proyecto
 
-# 1. Instalación de dependencias
+### 1. Instalación de dependencias
 
   - Descarga la carpeta [riegoauto](https://github.com/sebudea/proyectos_2024-2/tree/main/GR-08/riegoauto)
 
