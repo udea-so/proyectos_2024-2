@@ -25,13 +25,13 @@ Este proyecto utiliza un ESP32 para automatizar el riego de plantas según los n
 
   - Descarga la carpeta [riegoauto](https://github.com/sebudea/proyectos_2024-2/tree/main/GR-08/riegoauto)
 
-4. Configuración del proyecto
+### 2. Configuración del proyecto
 
 - En VSCode, con la extension PlatformIO, selecciona "Open Project" y navega hasta la carpeta riegoauto que descargaste
 
 - PlatformIO debería detectar automáticamente la configuración para el ESP32 en el archivo platformio.ini
 
-3. Compilación y subida del código al ESP32
+### 3. Compilación y subida del código al ESP32
 
 - Conecta tu ESP32 al computador vía USB
 
