@@ -17,7 +17,7 @@ Este proyecto utiliza un ESP32 para automatizar el riego de plantas según los n
 - Librerias necesarias: ESP32 SPIRAM, FreeRTOS
 
 ## Esquema de conexion
-
+![Image](https://www.infootec.net/wp-content/uploads/2023/11/humedadbomba-768x425.jpg)
 
 ## Pasos para usar este proyecto
 
