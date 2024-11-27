@@ -1,6 +1,6 @@
 Librerías necesarias en el siguiente enlace: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
-No necesita algún requisito específco para su sistemaolo, solo contar con un ordenador que soporte el entorno de desarrollo de Arduino IDE, tener una cuenta activa en Edge Impulse y una conexión a internet estable. 
+No se necesita algún requisito específco para el sistema, solo contar con un ordenador que soporte el entorno de desarrollo de Arduino IDE, tener una cuenta activa en Edge Impulse y una conexión a internet estable. 
 Además, tener los componentes de hardware mencionados en la parte de abajo.
 
 1. Preparativos:
