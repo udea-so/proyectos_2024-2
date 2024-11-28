@@ -11,7 +11,7 @@
 Dentro del directorio [documentos](documentos/) agregar los pdf de:
 - [x] Propuesta.
 - [ ] PDF del reporte escrito en formato IEEE ([Plantilla](https://docs.google.com/document/d/1STlifdKxZfG4ckL1YRGXvTSxvrQErKwg9SXYhQl0JYo/edit?usp=sharing)).
-- [ ] Dispositivas de la presentacion final.
+- [x] Dispositivas de la presentacion final.
 
 
 ### Archivos y elementos del respositorio
