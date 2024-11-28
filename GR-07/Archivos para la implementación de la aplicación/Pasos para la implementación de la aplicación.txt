@@ -1,0 +1,34 @@
+Librerías necesarias en el siguiente enlace: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+No se necesita algún requisito específco para el sistema, solo contar con un ordenador que soporte el entorno de desarrollo de Arduino IDE, tener una cuenta activa en Edge Impulse y una conexión a internet estable. 
+Además, tener los componentes de hardware mencionados en la parte de abajo.
+
+1. Preparativos:
+
+Hardware: ESP32-CAM, cables, cable USB, protoboard.
+Software: Edge Impulse para entrenar el modelo y Arduino IDE para programar el ESP32-CAM, recolección de imágenes y montaje del modelo al hardware.
+
+2. Adquisición de datos:
+
+Capturar imágenes de los objetos (vegetales) usando la cámara del ESP32-CAM.
+Utilizar la biblioteca EloquentEsp32camb versión 2.7.15 para configurar el ESP32-CAM como servidor web y capturar imágenes directamente.
+
+3. Uso de Edge Impulse:
+
+Crear un proyecto en Edge Impulse y cargar las imágenes capturadas.
+Etiquetar las imágenes dibujando cuadros delimitadores alrededor de los objetos.
+
+4. Creación del modelo:
+
+Configurar un impulse con bloques de procesamiento de imágenes y detección de objetos.
+Generar características a partir de las imágenes.
+
+5. Despliegue del modelo:
+
+Exportar el modelo entrenado como una biblioteca para Arduino.
+Cargar el modelo en el ESP32-CAM utilizando Arduino IDE.
+
+6. Prueba del sistema:
+
+El ESP32-CAM detecta los objetos y muestra los resultados.
+
