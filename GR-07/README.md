@@ -21,4 +21,4 @@ Dentro del directorio [documentos](documentos/) agregar los pdf de:
 - [x] Explicación de los requisitos del sistema
 - [x] Librerias y dependencias necesarias (pasos necesarios para llevar a cabo la instalación)
 - [x] Pasos necesarioas para ejecutar la aplicación.
-- [ ] Ademas del código, es deseable que tenga un Notebook de Jupyter como complemento para la parte estadistica.
+- [x] Ademas del código, es deseable que tenga un Notebook de Jupyter como complemento para la parte estadistica.
