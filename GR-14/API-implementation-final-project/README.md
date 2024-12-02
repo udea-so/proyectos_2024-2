@@ -4,7 +4,9 @@ Este es un proyecto de ejemplo usando **FastAPI** y **PostgreSQL**. El objetivo 
 
 ## Requisitos
 
-Para ejecutar este proyecto, asegúrate de tener instalado **Python 3.7+** y tener un entorno virtual configurado.
+- Para ejecutar este proyecto, asegúrate de tener instalado **Python 3.7+** y tener un entorno virtual configurado.
+- Puede ser ejecutado desde cualquier sistema operativo según corresponda.
+- Este proyecto se diseño en VScode
 
 ## Instalación
 
