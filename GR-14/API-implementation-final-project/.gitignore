@@ -1,0 +1,22 @@
+# Ignorar entorno virtual
+venv/
+env/
+
+# Ignorar archivos de Python compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar configuraciones de IDE
+.vscode/
+.idea/
+
+# Ignorar archivos de distribución
+*.egg-info/
+dist/
+build/
+
+# Ignorar archivos de configuración de Pytest
+.cache/
+alembic.ini
