@@ -18,6 +18,7 @@ Este es un proyecto de ejemplo usando **FastAPI** y **PostgreSQL**. El objetivo 
 ```
 ## Estructura del Proyecto
 
+```
 performance_monitoring/
 ├── app/
 │   ├── __init__.py
@@ -45,6 +46,8 @@ performance_monitoring/
 ├── requirements.txt
 ├── alembic.ini
 ├── README.md
+
+```
 
 ### Configuración archivo .env
 
