@@ -120,9 +120,11 @@ URL: http://127.0.0.1:8000/monitor
 
 ### Perfilado:
 
-Llama a /profile/start para iniciar.
-Ejecuta código que quieras analizar (por ejemplo, sample_function).
-Llama a /profile/stop para obtener los resultados.
+- Llama a /profile/start para iniciar.
+
+- Ejecuta código que quieras analizar (por ejemplo, sample_function).
+
+- Llama a /profile/stop para obtener los resultados.
 
 ### Consultar el perfilado guardado
 Método: GET
