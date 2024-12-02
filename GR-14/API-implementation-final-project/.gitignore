@@ -20,3 +20,4 @@ build/
 # Ignorar archivos de configuración de Pytest
 .cache/
 alembic.ini
+.env
