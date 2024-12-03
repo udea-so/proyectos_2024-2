@@ -13,8 +13,8 @@ Este es un proyecto de ejemplo usando **FastAPI** y **PostgreSQL**. El objetivo 
 ### **Clonar el repositorio:**
 
 ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
-   cd tu_repositorio
+   git clone https://github.com/udea-so/proyectos_2024-2.git
+   cd proyectos_2024-2/GR-14/API-implementation-final-project
 ```
 ## Estructura del Proyecto
 

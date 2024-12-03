@@ -6,6 +6,7 @@ from app.models.monitor import MonitorRecord
 from app.schemas.monitor import MonitorCreate
 
 class MonitorService:
+    
     @staticmethod
     def create_monitor_record(db: Session, record: MonitorCreate):
         """Guarda un nuevo registro de monitorización en la base de datos."""

@@ -7,8 +7,9 @@ class ProfileCreate(BaseModel):
 
 class ProfileResponse(ProfileCreate):
     id: int
-    profile_data: str
+    parameters: str
+    result: str
     timestamp: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True
