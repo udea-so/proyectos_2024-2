@@ -8,5 +8,7 @@ class ProfileRecord(Base):
     id = Column(Integer, primary_key=True, index=True)
     function_name = Column(String, nullable=False)
     module_name = Column(String, nullable=False)
-    profile_data = Column(Text, nullable=False)
+    parameters = Column(Text, nullable=False)  # Parámetros en JSON
+    result = Column(Text, nullable=True)  # Datos relevantes del perfilado
     timestamp = Column(DateTime, default=datetime.utcnow)
+
