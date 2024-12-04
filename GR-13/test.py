@@ -3,7 +3,7 @@ import requests
 import time
 
 URL = "http://127.0.0.1:8080/"
-NUM_REQUESTS = 100  # Total de solicitudes a enviar
+NUM_REQUESTS = 300  # Total de solicitudes a enviar
 CONCURRENT_THREADS = 10  # Número de solicitudes concurrentes
 
 def send_request():
