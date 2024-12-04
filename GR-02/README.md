@@ -44,11 +44,11 @@ El proyecto propone implementar y evaluar un sistema RAID utilizando discos duro
 4. **Seleccionar los Discos:**
    - Selecciona cada disco que deseas incluir en el RAID. Por ejemplo:
      ```bash
-     select disk 0
+     select disk 1
      ```
      Luego:
      ```bash
-     select disk 1
+     select disk 2
      ```
 
 5. **Inicializar los Discos:**
@@ -60,9 +60,9 @@ El proyecto propone implementar y evaluar un sistema RAID utilizando discos duro
      Repite este proceso para el segundo disco.
 
 6. **Crear el Volumen Reflejado:**
-   - Selecciona uno de los discos (por ejemplo, Disk 0):
+   - Selecciona uno de los discos (por ejemplo, Disk 1):
      ```bash
-     select disk 0
+     select disk 1
      ```
    - Crea un volumen básico en el disco seleccionado:
      ```bash
@@ -70,11 +70,11 @@ El proyecto propone implementar y evaluar un sistema RAID utilizando discos duro
      ```
    - Selecciona el volumen recién creado:
      ```bash
-     select volume 1
+     select volume 2
      ```
    - Refleja el volumen en el segundo disco:
      ```bash
-     add disk=1
+     add disk=2
      ```
 
 7. **Formatear el Volumen:**
