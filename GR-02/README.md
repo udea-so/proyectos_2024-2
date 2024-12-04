@@ -14,12 +14,16 @@ Dentro del directorio [documentos](documentos/) agregar los pdf de:
 
 ### Archivos y elementos del respositorio
 
-- [ ] El repositorio del código implementado con su documentación. 
-- [ ] Código que incluya todos los recursos relevantes para ejecutar la aplicación desarrollada para resolver el desafío. 
-- [ ] Explicación de los requisitos del sistema
-- [ ] Librerias y dependencias necesarias (pasos necesarios para llevar a cabo la instalación)
-- [ ] Pasos necesarioas para ejecutar la aplicación.
+- [x] El repositorio del código implementado con su documentación. 
+- [X] Explicación de los requisitos del sistema
+- [X] Librerias y dependencias necesarias (pasos necesarios para llevar a cabo la instalación)
+- [X] Pasos necesarioas para ejecutar la aplicación.
 - [ ] Ademas del código, es deseable que tenga un Notebook de Jupyter como complemento para la parte estadistica.
+
+## Descripción del Proyecto
+
+El proyecto propone implementar y evaluar un sistema RAID utilizando discos duros disponibles, con el objetivo de comparar su rendimiento con el de un solo disco. A través de esta evaluación, se busca comprender cómo la configuración RAID puede mejorar la eficiencia y la seguridad de los datos en entornos de almacenamiento. La implementación se centra en la configuración RAID 1 (reflejado), que prioriza la redundancia y la protección contra fallos de hardware. Este enfoque permitirá analizar los beneficios en términos de velocidad de lectura y escritura, así como la resiliencia frente a fallos de disco.
+---
 
 ### Requisitos
 - **Dos discos duros físicos.**
