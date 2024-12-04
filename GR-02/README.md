@@ -23,6 +23,7 @@ Dentro del directorio [documentos](documentos/) agregar los pdf de:
 ## Descripción del Proyecto
 
 El proyecto propone implementar y evaluar un sistema RAID utilizando discos duros disponibles, con el objetivo de comparar su rendimiento con el de un solo disco. A través de esta evaluación, se busca comprender cómo la configuración RAID puede mejorar la eficiencia y la seguridad de los datos en entornos de almacenamiento. La implementación se centra en la configuración RAID 1 (reflejado), que prioriza la redundancia y la protección contra fallos de hardware. Este enfoque permitirá analizar los beneficios en términos de velocidad de lectura y escritura, así como la resiliencia frente a fallos de disco.
+
 ---
 
 ### Requisitos
