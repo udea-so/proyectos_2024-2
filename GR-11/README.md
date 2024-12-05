@@ -1,24 +1,27 @@
-# Titulo del proyecto
+# Detector de movimiento con Raspberry PI
 
-> **Importante** 
-> * El formato del README es libre.
-> * Lo importante es que sea claro y que quien lo lea pueda replicar los pasos en su maquina.
+El siguiente proyecto es un un sistema detector de movimientos que posteriormente alerta con un sonido. También tiene un sistema de autenticación mediante un teclado para desactivar la alarma.
 
-## Lista de chequeo
+## Requisitos
+- Raspberry Pi
+- Protoboard
+- Teclado matricial
+- Buzzer
+- Sensor infrarrojo pasivo PIR
 
-### Documentos
+## Guia
+En los documentos de este repositorio se encuentra el codigo [`Alarma.ipynb`](documentos\Alarma.ipynb).
 
-Dentro del directorio [documentos](documentos/) agregar los pdf de:
-- [x] Propuesta.
-- [ ] PDF del reporte escrito en formato IEEE ([Plantilla](https://docs.google.com/document/d/1STlifdKxZfG4ckL1YRGXvTSxvrQErKwg9SXYhQl0JYo/edit?usp=sharing)).
-- [ ] Dispositivas de la presentacion final.
+Tambien se uso el siguiente video como guia: [`Raspberry Pi detector de movimiento con sensor infrarrojo pasivo PIR y buzzer, código en Python.`](https://www.youtube.com/watch?v=HxjvP9m-hRo)
+ 
+En el video se encuentra una guia completa del codigo (sin la implementacion del teclado) junto con las conexiones realizadas entre los componentes del sistema.
 
+## Recursos adicionales
+Se encuentra una carpeta de [imagenes](Imagenes) con muestras de como queda la conexion final de todo el sistema.
 
-### Archivos y elementos del respositorio
+Adicionalmente tenemos un video demo para mostrar el funcionamiento de todo el sistema.
 
-- [ ] El repositorio del código implementado con su documentación. 
-- [ ] Código que incluya todos los recursos relevantes para ejecutar la aplicación desarrollada para resolver el desafío. 
-- [ ] Explicación de los requisitos del sistema
-- [ ] Librerias y dependencias necesarias (pasos necesarios para llevar a cabo la instalación)
-- [ ] Pasos necesarioas para ejecutar la aplicación.
-- [ ] Ademas del código, es deseable que tenga un Notebook de Jupyter como complemento para la parte estadistica.
+<video controls>
+  <source src="Imagenes/Demo%20del%20detector%20de%20movimiento.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

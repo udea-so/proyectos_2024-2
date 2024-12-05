@@ -1,23 +1,45 @@
-# Titulo del proyecto
+# Servidor Web Concurrente en Python
 
-> **Importante** 
-> * El formato del README es libre.
-> * Lo importante es que sea claro y que quien lo lea pueda replicar los pasos en su maquina.
+Este proyecto implementa un **servidor web concurrente** en Python utilizando **hilos** para manejar múltiples solicitudes simultáneamente. El servidor es capaz de responder con contenido HTML básico y guardar métricas de rendimiento, como tiempos de respuesta y errores HTTP, en un archivo CSV.
 
-## Lista de chequeo
+---
 
-### Documentos
+## **Características**
+- Manejo de múltiples conexiones concurrentes mediante **hilos (`threading`)**.
+- Respuestas HTTP básicas con una página HTML simple.
+- Registro de métricas clave en un archivo CSV:
+  - **Tiempos de respuesta**.
+  - **Códigos de error HTTP**.
+- Configuración del tamaño de la cola de conexiones para controlar la carga.
+- Código modular y fácil de extender.
 
-Dentro del directorio [documentos](documentos/) agregar los pdf de:
-- [x] Propuesta.
-- [ ] PDF del reporte escrito en formato IEEE ([Plantilla](https://docs.google.com/document/d/1STlifdKxZfG4ckL1YRGXvTSxvrQErKwg9SXYhQl0JYo/edit?usp=sharing)).
-- [ ] Dispositivas de la presentacion final.
+---
 
-### Archivos y elementos del respositorio
+## **Requisitos**
+- Python 3.7 o superior.
+- Librerías estándar:
+  - `socket`
+  - `threading`
+  - `time`
+  - `csv`
 
-- [ ] El repositorio del código implementado con su documentación. 
-- [ ] Código que incluya todos los recursos relevantes para ejecutar la aplicación desarrollada para resolver el desafío. 
-- [ ] Explicación de los requisitos del sistema
-- [ ] Librerias y dependencias necesarias (pasos necesarios para llevar a cabo la instalación)
-- [ ] Pasos necesarioas para ejecutar la aplicación.
-- [ ] Ademas del código, es deseable que tenga un Notebook de Jupyter como complemento para la parte estadistica.
+---
+
+## **Instalación**
+1. Clona este repositorio:
+   git clone https://github.com/Veritax0/servidor-web-concurrente.git
+   cd servidor-web-concurrente
+
+2. Verifica la instalación de python e instala dependencias
+    python3 --version
+    pip install requests
+
+3. Ejecuta el archivo server.py para iniciar el servidor:
+    python server.py
+    **El servidor escuchará en 127.0.0.1:8080 de manera predeterminada. Puedes modificar las variables HOST y PORT en el archivo server.py para cambiar la dirección y puerto.**
+
+4. Para probar el servidor, utiliza el script test.py, que genera múltiples solicitudes concurrentes:
+    python test.py
+
+5. Se creará un archivo csv en la carpeta raiz donde se guardaran las metricas del servidor para su posterior analisis.
+
