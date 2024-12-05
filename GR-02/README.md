@@ -1,101 +1,101 @@
-# Evaluación del rendimiento de un sistema RAID.
+# 💾 Evaluación del Rendimiento de un Sistema RAID
 
-> **Importante** 
+## 📋 Información del Proyecto
 
-## Lista de chequeo
+### Autores
+- **Carlos Zapata Arango**
+- **Ferley José Silva Jiménez**
+- **Manuela Gutiérrez Cano**
 
-### Documentos
+### Filiación
+Facultad de Ingeniería, Universidad de Antioquia
 
-Dentro del directorio [documentos](documentos/) agregar los pdf de:
-- [x] Propuesta.
-- [x] PDF del reporte escrito en formato IEEE ([Plantilla](https://docs.google.com/document/d/1STlifdKxZfG4ckL1YRGXvTSxvrQErKwg9SXYhQl0JYo/edit?usp=sharing)).
-- [x] Dispositivas de la presentacion final.
+### Contacto
+- 📧 Correos electrónicos:
+  - carlos@ejemplo.com
+  - ferley@ejemplo.com 
+  - manuela.gutierrezc@udea.edu.co
 
+## 🎯 Resumen Ejecutivo
 
-### Archivos y elementos del respositorio
+El presente proyecto aborda la evaluación exhaustiva del rendimiento de sistemas de almacenamiento RAID (Redundant Array of Independent Disks), con un enfoque específico en la configuración RAID 1 (espejo).
 
-- [x] El repositorio del código implementado con su documentación. 
-- [X] Explicación de los requisitos del sistema
-- [X] Librerias y dependencias necesarias (pasos necesarios para llevar a cabo la instalación)
-- [X] Pasos necesarioas para ejecutar la aplicación.
-- [ ] Ademas del código, es deseable que tenga un Notebook de Jupyter como complemento para la parte estadistica.
+## 🔬 Objetivo de Investigación
 
-## Descripción del Proyecto
+Analizar comparativamente el rendimiento, confiabilidad y eficiencia de un sistema de almacenamiento RAID 1 frente a un disco único, mediante métricas técnicas de evaluación.
 
-El proyecto propone implementar y evaluar un sistema RAID utilizando discos duros disponibles, con el objetivo de comparar su rendimiento con el de un solo disco. A través de esta evaluación, se busca comprender cómo la configuración RAID puede mejorar la eficiencia y la seguridad de los datos en entornos de almacenamiento. La implementación se centra en la configuración RAID 1 (reflejado), que prioriza la redundancia y la protección contra fallos de hardware. Este enfoque permitirá analizar los beneficios en términos de velocidad de lectura y escritura, así como la resiliencia frente a fallos de disco.
+## 🛠️ Configuración Técnica
+
+### Infraestructura de Hardware
+- **Discos de Almacenamiento**: 2 unidades
+- **Configuración RAID**: RAID 1 (Espejo)
+- **Requisitos Mínimos**:
+  - Procesador Multicore
+  - 16 GB RAM
+  - Acceso Administrativo al Sistema
+
+### Herramientas y Software
+- Sistema Operativo: Windows
+- Herramientas:
+  - Símbolo del Sistema/PowerShell
+  - Administrador de Discos
+  - Herramientas de Benchmarking
+
+## 📊 Métricas de Evaluación
+
+1. **Rendimiento**
+   - Velocidad de Lectura
+   - Velocidad de Escritura
+   - Latencia de Acceso
+
+2. **Confiabilidad**
+   - Tolerancia a Fallos
+   - Tiempo de Recuperación
+   - Redundancia de Datos
+
+3. **Eficiencia**
+   - Aprovechamiento de Recursos
+   - Overhead de Procesamiento
+   - Consumo Energético
+
+## 📋 Metodología
+
+### Proceso de Implementación
+1. Preparación de Infraestructura
+2. Configuración RAID 1
+3. Establecimiento de Línea Base
+4. Pruebas de Rendimiento
+5. Recopilación y Análisis de Datos
+
+### Herramientas de Medición
+- Scripts personalizados
+- Herramientas de benchmarking de disco
+- Monitoreo de rendimiento del sistema
+
+## 📚 Referencias Académicas
+
+1. Byte TI. "Evaluación de sistemas RAID para NAS"
+2. Intel. "Definición de volúmenes RAID"
+3. Tecnozero. "Tipos de RAID: ¿cuál elegir?"
+4. Digital Recovery. "Sistema RAID 0: rendimiento y eficacia"
+5. MercadoIT. "RAID 0 vs. RAID 1: ¿cuál elegir?"
+
+## 🤝 Contribuciones
+
+### Guía de Colaboración
+1. Fork del Repositorio
+2. Crear Rama de Desarrollo
+3. Implementar Mejoras
+4. Documentar Cambios
+5. Solicitar Pull Request
+
+## 📜 Licencia
+
+[Especificar Tipo de Licencia, e.g. MIT, Apache 2.0]
+
+## 🏆 Reconocimientos
+
+Proyecto desarrollado en el marco de la Facultad de Ingeniería, Universidad de Antioquia.
 
 ---
-
-### Requisitos
-- **Dos discos duros físicos.**
-- **Acceso administrativo a la máquina.**
-
-### Pasos
-
-1. **Abrir la Consola de Comandos como Administrador:**
-   - Presiona `Win + X` y selecciona "Símbolo del sistema (Administrador)" o "Windows PowerShell (Administrador)".
-
-2. **Iniciar diskpart:**
-   - En la consola, escribe `diskpart` y presiona Enter.
-
-3. **Listar los Discos:**
-   - Dentro de diskpart, escribe `list disk` y presiona Enter. Esto mostrará una lista de todos los discos conectados a la máquina.
-
-4. **Seleccionar los Discos:**
-   - Selecciona cada disco que deseas incluir en el RAID. Por ejemplo:
-     ```bash
-     select disk 1
-     ```
-     Luego:
-     ```bash
-     select disk 2
-     ```
-
-5. **Inicializar los Discos:**
-   - Asegúrate de que ambos discos estén en modo MBR o GPT. Para inicializar un disco en modo MBR, escribe:
-     ```bash
-     clean
-     convert mbr
-     ```
-     Repite este proceso para el segundo disco.
-
-6. **Crear el Volumen Reflejado:**
-   - Selecciona uno de los discos (por ejemplo, Disk 1):
-     ```bash
-     select disk 1
-     ```
-   - Crea un volumen básico en el disco seleccionado:
-     ```bash
-     create volume simple size=100%
-     ```
-   - Selecciona el volumen recién creado:
-     ```bash
-     select volume 2
-     ```
-   - Refleja el volumen en el segundo disco:
-     ```bash
-     add disk=2
-     ```
-
-7. **Formatear el Volumen:**
-   - Formatea el volumen reflejado con un sistema de archivos (por ejemplo, NTFS):
-     ```bash
-     format fs=ntfs label="RAID1" quick
-     ```
-
-8. **Asignar una Letra de Unidad:**
-   - Asigna una letra de unidad al volumen:
-     ```bash
-     assign letter=R
-     ```
-
-9. **Salir de diskpart:**
-   - Escribe `exit` y presiona Enter para salir de diskpart.
-
-10. **Verificar el RAID:**
-    - Abre el "Administrador de Discos" para verificar que el RAID 1 se ha creado correctamente y que ambos discos están reflejados.
----
-## Requisitos de Hardware
-- **Procesador multicore.**
-- **RAM 16GB o superior.**
-  
+© 2024 Grupo de Investigación. Todos los derechos reservados.
