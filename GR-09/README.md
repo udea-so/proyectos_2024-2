@@ -1,8 +1,7 @@
 # Comparación de Algoritmos **Python** vs **Spark**
-
+##### Integrantes: Efraín García, Nicolas Carmona, Samuel Acevedo
 > **Importante** 
-> * El formato del README es libre.
-> * Lo importante es que sea claro y que quien lo lea pueda replicar los pasos en su maquina.
+> * Toda la información sobre el proyecto la puedes encontrar [Aquí](código/Readme.md)
 
 ## Lista de chequeo
 
