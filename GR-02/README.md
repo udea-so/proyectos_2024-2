@@ -1,101 +1,112 @@
-# 💾 Evaluación del Rendimiento de un Sistema RAID
+[![Licencia MIT](https://img.shields.io/badge/Licencia-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
+[![GitHub](https://img.shields.io/badge/GitHub-zapata--git-darkgreen.svg)](https://github.com/zapata-git)
+[![TQDM](https://img.shields.io/badge/TQDM-latest-orange.svg)](https://github.com/tqdm/tqdm)
+# 💾 Evaluación del Rendimiento de un Sistema RAID 1
 
-## 📋 Información del Proyecto
+## 👥 Autores
+- Carlos Zapata Arango
+- Ferley José Silva Jiménez 
+- Manuela Gutiérrez Cano
 
-### Autores
-- **Carlos Zapata Arango**
-- **Ferley José Silva Jiménez**
-- **Manuela Gutiérrez Cano**
+## 🎯 Objetivo
+Implementar y evaluar un sistema RAID 1 (reflejado) utilizando discos duros físicos para comparar rendimiento y redundancia.
 
-### Filiación
-Facultad de Ingeniería, Universidad de Antioquia
+## 🛠️ Requisitos
+- **Hardware**:
+  - Dos discos duros físicos
+  - Acceso administrativo a la máquina
 
-### Contacto
-- 📧 Correos electrónicos:
-  - carlos@ejemplo.com
-  - ferley@ejemplo.com 
-  - manuela.gutierrezc@udea.edu.co
+## 📋 Pasos de Configuración de RAID 1
 
-## 🎯 Resumen Ejecutivo
+### 1. Abrir Consola de Comandos como Administrador
+- Presionar `Win + X`
+- Seleccionar "Símbolo del sistema (Administrador)" o "Windows PowerShell (Administrador)"
 
-El presente proyecto aborda la evaluación exhaustiva del rendimiento de sistemas de almacenamiento RAID (Redundant Array of Independent Disks), con un enfoque específico en la configuración RAID 1 (espejo).
+### 2. Iniciar diskpart
+```bash
+diskpart
+```
 
-## 🔬 Objetivo de Investigación
+### 3. Listar Discos
+```bash
+list disk
+```
 
-Analizar comparativamente el rendimiento, confiabilidad y eficiencia de un sistema de almacenamiento RAID 1 frente a un disco único, mediante métricas técnicas de evaluación.
+### 4. Seleccionar Discos
+```bash
+# Seleccionar primer disco (ejemplo: Disk 0)
+select disk 0
 
-## 🛠️ Configuración Técnica
+# Seleccionar segundo disco (ejemplo: Disk 1)
+select disk 1
+```
 
-### Infraestructura de Hardware
-- **Discos de Almacenamiento**: 2 unidades
-- **Configuración RAID**: RAID 1 (Espejo)
-- **Requisitos Mínimos**:
-  - Procesador Multicore
-  - 16 GB RAM
-  - Acceso Administrativo al Sistema
+### 5. Inicializar Discos
+```bash
+# Para cada disco
+clean
+convert mbr
+```
 
-### Herramientas y Software
-- Sistema Operativo: Windows
-- Herramientas:
-  - Símbolo del Sistema/PowerShell
-  - Administrador de Discos
-  - Herramientas de Benchmarking
+### 6. Crear Volumen Reflejado
+```bash
+# Seleccionar primer disco
+select disk 0
+
+# Crear volumen simple en el primer disco
+create volume simple size=100%
+
+# Seleccionar volumen
+select volume 1
+
+# Añadir segundo disco al volumen reflejado
+add disk=1
+```
+
+### 7. Formatear Volumen
+```bash
+# Formatear con sistema de archivos NTFS
+format fs=ntfs label="RAID1" quick
+```
+
+### 8. Asignar Letra de Unidad
+```bash
+assign letter=R
+```
+
+### 9. Salir de diskpart
+```bash
+exit
+```
+
+## 🔍 Verificación
+- Abrir "Administrador de Discos"
+- Confirmar que RAID 1 está correctamente configurado
+- Verificar que ambos discos están reflejados
 
 ## 📊 Métricas de Evaluación
+- Velocidad de lectura
+- Velocidad de escritura
+- Tolerancia a fallos
+- Redundancia de datos
 
-1. **Rendimiento**
-   - Velocidad de Lectura
-   - Velocidad de Escritura
-   - Latencia de Acceso
+## 🛡️ Beneficios de RAID 1
+- Duplicación de datos
+- Protección contra fallos de disco
+- Mejora en velocidad de lectura
+- Alta disponibilidad de datos
 
-2. **Confiabilidad**
-   - Tolerancia a Fallos
-   - Tiempo de Recuperación
-   - Redundancia de Datos
-
-3. **Eficiencia**
-   - Aprovechamiento de Recursos
-   - Overhead de Procesamiento
-   - Consumo Energético
-
-## 📋 Metodología
-
-### Proceso de Implementación
-1. Preparación de Infraestructura
-2. Configuración RAID 1
-3. Establecimiento de Línea Base
-4. Pruebas de Rendimiento
-5. Recopilación y Análisis de Datos
-
-### Herramientas de Medición
-- Scripts personalizados
-- Herramientas de benchmarking de disco
-- Monitoreo de rendimiento del sistema
-
-## 📚 Referencias Académicas
-
-1. Byte TI. "Evaluación de sistemas RAID para NAS"
-2. Intel. "Definición de volúmenes RAID"
-3. Tecnozero. "Tipos de RAID: ¿cuál elegir?"
-4. Digital Recovery. "Sistema RAID 0: rendimiento y eficacia"
-5. MercadoIT. "RAID 0 vs. RAID 1: ¿cuál elegir?"
+## 📚 Referencias
+- Microsoft Docs - Administración de discos
+- Documentación técnica de RAID
 
 ## 🤝 Contribuciones
-
-### Guía de Colaboración
-1. Fork del Repositorio
-2. Crear Rama de Desarrollo
-3. Implementar Mejoras
-4. Documentar Cambios
+1. Fork del repositorio
+2. Crear rama de feature
+3. Implementar mejoras
+4. Documentar cambios
 5. Solicitar Pull Request
 
-## 📜 Licencia
-
-[Especificar Tipo de Licencia, e.g. MIT, Apache 2.0]
-
-## 🏆 Reconocimientos
-
-Proyecto desarrollado en el marco de la Facultad de Ingeniería, Universidad de Antioquia.
-
 ---
-© 2024 Grupo de Investigación. Todos los derechos reservados.
+© 2024 Grupo de Investigación, Universidad de Antioquia
