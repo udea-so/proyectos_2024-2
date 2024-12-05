@@ -17,8 +17,7 @@ Este proyecto utiliza un ESP32 para automatizar el riego de plantas según los n
 - Librerias necesarias: ESP32 SPIRAM, FreeRTOS
 
 ## Esquema de conexion
-![Image](documentos
-/Esquematico.png)
+![Image](documentos/Esquematico.png)
 
 ## Pasos para usar este proyecto
 
