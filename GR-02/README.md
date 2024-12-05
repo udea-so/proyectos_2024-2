@@ -1,7 +1,7 @@
-[![Licencia MIT](https://img.shields.io/badge/Licencia-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
-[![GitHub](https://img.shields.io/badge/GitHub-zapata--git-darkgreen.svg)](https://github.com/zapata-git)
-[![TQDM](https://img.shields.io/badge/TQDM-latest-orange.svg)](https://github.com/tqdm/tqdm)
+[![Licencia](https://img.shields.io/badge/Licencia-Académico-green.svg)](#)
+[![Universidad](https://img.shields.io/badge/Universidad-Antioquia-blue.svg)](https://www.udea.edu.co)
+[![Tecnología](https://img.shields.io/badge/Tecnología-RAID_1-orange.svg)](#)
+[![Sistemas Operativos](https://img.shields.io/badge/SO-Windows-darkblue.svg)](https://www.microsoft.com/windows)
 # 💾 Evaluación del Rendimiento de un Sistema RAID 1
 
 ## 👥 Autores
