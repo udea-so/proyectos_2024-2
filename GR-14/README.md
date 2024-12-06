@@ -1,4 +1,4 @@
-# Titulo del proyecto
+# Creación de una API para analizar el rendimiento de aplicaciones web
 
 > **Importante** 
 > * El formato del README es libre.
@@ -11,7 +11,7 @@
 Dentro del directorio [documentos](documentos/) agregar los pdf de:
 - [x] Propuesta.
 - [x] PDF del reporte escrito en formato IEEE ([Plantilla](https://docs.google.com/document/d/1STlifdKxZfG4ckL1YRGXvTSxvrQErKwg9SXYhQl0JYo/edit?usp=sharing)).
-- [ ] Dispositivas de la presentacion final.
+- [x] Dispositivas de la presentacion final.
 
 
 ### Archivos y elementos del respositorio
@@ -21,4 +21,4 @@ Dentro del directorio [documentos](documentos/) agregar los pdf de:
 - [x] Explicación de los requisitos del sistema
 - [x] Librerias y dependencias necesarias (pasos necesarios para llevar a cabo la instalación)
 - [x] Pasos necesarioas para ejecutar la aplicación.
-- [ ] Ademas del código, es deseable que tenga un Notebook de Jupyter como complemento para la parte estadistica.
+- [x] Ademas del código, es deseable que tenga un Notebook de Jupyter como complemento para la parte estadistica.
